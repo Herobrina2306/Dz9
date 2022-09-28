@@ -4,21 +4,31 @@
 
 Console.Clear();
 
+
 Console.WriteLine("Введите число N");
 int a = int.Parse(Console.ReadLine() ?? string.Empty);
 
 
 int c = 0;
-if (a % 2 ==1)
+
+if(a < 2)
 {
-    
-    c = a-1;
+    Console.WriteLine("Чтобы программа работала введите число больше 2");
+    return;
 }
 else
 {
-    c=a;
+    if (a % 2 ==1)
+    {
+    
+        c = a-1;
+    }
+    else
+    {
+        c=a;
+    }
+    Console.Write($"N = {a} -> {Parity(c)}");
 }
-Console.Write($"N = {a} -> {Parity(c)}");
 
 string Parity(int b)
 {
