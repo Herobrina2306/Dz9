@@ -15,7 +15,7 @@ int Sum(int c, int d)
 {
     if (c == d) 
     {
-        return c + d -1;
+        return d;
     }
     else
     {
