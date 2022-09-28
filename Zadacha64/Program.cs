@@ -14,7 +14,10 @@ if (a % 2 ==1)
     
     c = a-1;
 }
-
+else
+{
+    c=a;
+}
 Console.Write($"N = {a} -> {Parity(c)}");
 
 string Parity(int b)
